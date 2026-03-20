@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MANU GAMING</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Consolas;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🎥 Live wallpaper */
+#bgvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* perfect fit */
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+/* Center content */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Title */
+h1 {
+  font-size: 45px;
+  color: cyan;
+  text-shadow: 0 0 20px cyan, 0 0 40px blue;
+}
+
+/* Info */
+p {
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  background: transparent;
+  border: 2px solid cyan;
+  color: cyan;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 15px cyan, 0 0 30px blue;
+  transform: scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- 🎥 YOUR WALLPAPER -->
+<video autoplay muted loop playsinline id="bgvid">
+  <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+  <h1>🔥 MANU GAMING 🔥</h1>
+
+  <p>🎮 Free Fire ID: <b>1576266203</b></p>
+  <p>💬 Discord ID: <b>1143416491270746205</b></p>
+
+  <button onclick="insta()">📸 Instagram</button>
+  <button onclick="discord()">💬 Join Discord</button>
+</div>
+
+<script>
+function insta() {
+  window.open("https://www.instagram.com/vlmanux.007/?next=", "_blank");
+}
+
+function discord() {
+  window.open("https://discord.gg/8mV8Cpv9", "_blank");
+}
+</script>
+
+</body>
+</html>
